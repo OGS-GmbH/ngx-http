@@ -1,0 +1,60 @@
+{
+	"name": "@ogs-gmbh/ngx-http",
+	"version": "0.0.0",
+  "homepage": "https://github.com/OGS-GmbH/ngx-http",
+	"author": "OGS GmbH",
+	"repository": {
+		"type": "git",
+		"url": "git+http://ogs-hq-git.ogs.local/standard/shared/npm/ngx-http.git"
+	},
+	"scripts": {
+    "ci:build:prod": "ng build --configuration=production"
+	},
+	"devDependencies": {
+		"@ogs-gmbh/linter": "^1",
+		"@angular-devkit/build-angular": "^18.2.1",
+		"@angular/cli": "^18.2.1",
+		"@angular/compiler-cli": "^18.2.1",
+		"ng-packagr": "^18.2.1",
+		"tslib": "^2.7.0",
+		"typescript": "~5.5.4",
+		"cz-conventional-changelog": "^3.3.0",
+		"commitlint": "^19.5.0",
+		"commitizen": "^4.3.0",
+		"conventional-changelog-conventionalcommits": "^8.0.0",
+		"@types/lodash": "^4",
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-conventional": "^19.6.0",
+		"@eslint/js": "^9.9.0",
+		"@eslint/json": "^0.6.0",
+		"@eslint/markdown": "^6.2.1",
+		"@stylistic/eslint-plugin-js": "^2.10.1",
+		"@stylistic/eslint-plugin-plus": "^2.10.1",
+		"@stylistic/eslint-plugin-ts": "^2.10.1",
+		"angular-eslint": "^18.3.0",
+		"eslint": "^9.9.0",
+		"eslint-plugin-unicorn": "^56.0.0",
+		"globals": "^15.13.0",
+		"husky": "^9.1.5",
+		"lint-staged": "^15.2.10",
+		"npm-package-json-lint": "^8.0.0",
+		"typescript-eslint": "^8.2.0"
+	},
+	"peerDependencies": {
+		"@angular/animations": "^18.2.1",
+		"@angular/common": "^18.2.1",
+		"@angular/compiler": "^18.2.1",
+		"@angular/core": "^18.2.1",
+		"@angular/forms": "^18.2.1",
+		"@angular/platform-browser": "^18.2.1",
+		"@angular/platform-browser-dynamic": "^18.2.1",
+		"@angular/router": "^18.2.1",
+		"rxjs": "~7.8.1",
+		"zone.js": "^0.14.10",
+		"lodash": "^4"
+	},
+	"sideEffects": false,
+	"publishConfig": {
+    "directory": "dist/prod"
+	}
+}
