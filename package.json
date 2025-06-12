@@ -1,14 +1,14 @@
 {
 	"name": "@ogs-gmbh/ngx-http",
-	"version": "0.0.0",
-  "homepage": "https://github.com/OGS-GmbH/ngx-http",
+	"version": "1.0.0",
+	"homepage": "https://github.com/OGS-GmbH/ngx-http",
 	"author": "OGS GmbH",
 	"repository": {
 		"type": "git",
 		"url": "git+http://ogs-hq-git.ogs.local/standard/shared/npm/ngx-http.git"
 	},
 	"scripts": {
-    "ci:build:prod": "ng build --configuration=production"
+		"ci:build:prod": "ng build --configuration=production"
 	},
 	"devDependencies": {
 		"@ogs-gmbh/linter": "^1",
@@ -55,6 +55,6 @@
 	},
 	"sideEffects": false,
 	"publishConfig": {
-    "directory": "dist/prod"
+		"directory": "dist/prod"
 	}
 }
