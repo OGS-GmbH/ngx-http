@@ -1,0 +1,9 @@
+name: PR Review
+on:
+  pull_request:
+    types: [ review_requested ]
+  workflow_dispatch:
+
+jobs:
+  call-npm-package-pr-checks:
+    uses: OGS-GmbH/reusable-github-actions/.github/workflows/npm-package-pr-checks.yml@main

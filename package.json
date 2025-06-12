@@ -1,11 +1,11 @@
 {
 	"name": "@ogs-gmbh/ngx-http",
 	"version": "0.0.0",
-  "homepage": "https://github.com/OGS-GmbH/ngx-http",
+	"homepage": "https://github.com/OGS-GmbH/ngx-http?tab=readme-ov-file",
 	"author": "OGS GmbH",
 	"repository": {
 		"type": "git",
-		"url": "git+http://ogs-hq-git.ogs.local/standard/shared/npm/ngx-http.git"
+		"url": "https://github.com/OGS-GmbH/ngx-http"
 	},
 	"scripts": {
     "ci:build:prod": "ng build --configuration=production"
