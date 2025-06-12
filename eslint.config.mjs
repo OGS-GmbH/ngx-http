@@ -38,7 +38,7 @@ export default tseslint.config(
       "node_modules",
       "dist",
       "CHANGELOG.md",
-      "README"
+      "README.md"
     ]
   },
   {
