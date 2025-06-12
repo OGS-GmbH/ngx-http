@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.2](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.1...v1.0.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* added readme content ([dcf2ad9](https://github.com/OGS-GmbH/ngx-http/commit/dcf2ad9ef320d4f1bd5ab7260256a0ef32716532))
+* ignore readme ([29a189e](https://github.com/OGS-GmbH/ngx-http/commit/29a189e2301e3243e118160d487fd4d274dbfc77))
+* readme ([0f97217](https://github.com/OGS-GmbH/ngx-http/commit/0f972175c8f3f178efd73b77a0502b186107139b))
+
 ## [1.0.1](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.0...v1.0.1) (2025-06-12)
 
 
