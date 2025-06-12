@@ -36,7 +36,9 @@ export default tseslint.config(
       ".husky",
       ".idea",
       "node_modules",
-      "dist"
+      "dist",
+      "CHANGELOG.md",
+      "README.md"
     ]
   },
   {
