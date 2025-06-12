@@ -8,7 +8,8 @@
 		"url": "https://github.com/OGS-GmbH/ngx-http"
 	},
 	"scripts": {
-    "ci:build:prod": "ng build --configuration=production"
+    "ci:build:main:production": "ng build --configuration=production",
+    "ci:pr:lint:main:eslint": "eslint ."
 	},
 	"devDependencies": {
 		"@ogs-gmbh/linter": "^1",
