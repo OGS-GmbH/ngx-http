@@ -1,7 +1,11 @@
 name: PR Review
 on:
   pull_request:
-    types: [ review_requested ]
+    types: [
+      opened,
+      reopened,
+      synchronize
+    ]
   workflow_dispatch:
 
 jobs:
