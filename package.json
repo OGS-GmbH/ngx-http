@@ -1,6 +1,6 @@
 {
 	"name": "@ogs-gmbh/ngx-http",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"homepage": "https://github.com/OGS-GmbH/ngx-http?tab=readme-ov-file",
 	"author": "OGS GmbH",
 	"repository": {
@@ -8,8 +8,8 @@
 		"url": "https://github.com/OGS-GmbH/ngx-http"
 	},
 	"scripts": {
-    "ci:build:main:production": "ng build --configuration=production",
-    "ci:pr:lint:main:eslint": "eslint ."
+		"ci:build:main:production": "ng build --configuration=production",
+		"ci:pr:lint:main:eslint": "eslint ."
 	},
 	"devDependencies": {
 		"@ogs-gmbh/linter": "^1",
@@ -56,6 +56,6 @@
 	},
 	"sideEffects": false,
 	"publishConfig": {
-    "directory": "dist/prod"
+		"directory": "dist/prod"
 	}
 }
