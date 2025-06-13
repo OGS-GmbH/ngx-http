@@ -9,7 +9,8 @@
 	},
 	"scripts": {
 		"ci:build:main:production": "ng build --configuration=production",
-		"ci:pr:lint:main:eslint": "eslint ."
+		"ci:pr:lint:main:eslint": "eslint .",
+    "ci:pr:commitlint:main:commitlint": "commitlint"
 	},
 	"devDependencies": {
 		"@ogs-gmbh/linter": "^1",
