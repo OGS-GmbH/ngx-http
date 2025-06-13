@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.2...v1.0.3) (2025-06-13)
+
+
+### Bug Fixes
+
+* package metadata ([80715da](https://github.com/OGS-GmbH/ngx-http/commit/80715dac87939ae0c9a4a712ad8ffb33c2e01208))
+
 ## [1.0.2](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.1...v1.0.2) (2025-06-12)
 
 
