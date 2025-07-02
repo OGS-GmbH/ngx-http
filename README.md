@@ -1,8 +1,8 @@
 # HTTP Extension Library
 
-![GitHub License](https://img.shields.io/github/license/OGS-GmbH/ngx-http)
-![NPM Version](https://img.shields.io/npm/v/%40ogs-gmbh%2Fngx-http)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/OGS-GmbH/ngx-http/main-deploy.yml)
+![GitHub License](https://img.shields.io/github/license/OGS-GmbH/ngx-http?color=0f434e)
+![NPM Version](https://img.shields.io/npm/v/%40ogs-gmbh%2Fngx-http?color=0f434e)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/OGS-GmbH/ngx-http/main-deploy.yml?color=0f434e)
 
 A lightweight and modular Angular library that enhances HTTP functionalities by providing strongly-typed interfaces, standardized static values, and a set of reusable utility functions.
 
@@ -29,7 +29,7 @@ pnpm install @ogs-gmbh/ngx-http
 </details>
 
 ## License
-The MIT License (MIT) - Please have a look at the [LICENSE file](https://github.com/OGS-GmbH/ngx-http/blob/main/LICENSE) for more details.
+The MIT License (MIT) - Please have a look at the [LICENSE file](./LICENSE) for more details.
 
 ## Contributing
 Contributions are always welcome and greatly appreciated. Whether you want to report a bug, suggest a new feature, or improve the documentation, your input helps make the project better for everyone.
