@@ -38,7 +38,7 @@
     }
   },
 	"cli": {
-		"packageManager": "npm",
+		"packageManager": "pnpm",
 		"warnings": {
 			"versionMismatch": true
 		},
