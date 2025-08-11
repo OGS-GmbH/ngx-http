@@ -17,6 +17,9 @@ importers:
       '@angular/core':
         specifier: ^18.2.1
         version: 18.2.13(rxjs@7.8.2)(zone.js@0.14.10)
+      lodash:
+        specifier: ^4
+        version: 4.17.21
       rxjs:
         specifier: ~7.8.1
         version: 7.8.2
