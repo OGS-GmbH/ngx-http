@@ -1,6 +1,6 @@
 import { HttpHeaders, HttpParams } from "@angular/common/http";
 import { HttpHeadersOption, HttpJsonBodyOption, HttpParamsOption } from "../types/http.type";
-import _ from "lodash";
+import { merge } from "es-toolkit";
 
 function mergeHttpHeaders (...headers: HttpHeadersOption[]): HttpHeaders {
   let httpHeaderResult: HttpHeaders = new HttpHeaders();
@@ -8,15 +8,13 @@ function mergeHttpHeaders (...headers: HttpHeadersOption[]): HttpHeaders {
   headers.forEach((currentHeader: HttpHeadersOption): void => {
     if (currentHeader instanceof HttpHeaders) {
       currentHeader.keys().forEach((currentHeaderKey: string): void => {
-        /* eslint-disable-next-line @tseslint/no-non-null-assertion */
-        const currentHeaderValue: string = currentHeader.get(currentHeaderKey)!;
+        const currentHeaderValue: string = currentHeader.get(currentHeaderKey) ?? "";
 
         httpHeaderResult = httpHeaderResult.append(currentHeaderKey, currentHeaderValue);
       });
     } else {
       Object.keys(currentHeader).forEach((currentHeaderKey: string): void => {
-        /* eslint-disable-next-line @tseslint/no-non-null-assertion */
-        const currentHeaderValue: string | string[] = currentHeader[ currentHeaderKey ]!;
+        const currentHeaderValue: string | string[] | undefined = currentHeader[ currentHeaderKey ];
 
         if (Array.isArray(currentHeaderValue)) {
           currentHeaderValue.forEach((currentHeaderValueItem: string): void => {
@@ -26,7 +24,7 @@ function mergeHttpHeaders (...headers: HttpHeadersOption[]): HttpHeaders {
           return;
         }
 
-        httpHeaderResult = httpHeaderResult.append(currentHeaderKey, currentHeaderValue);
+        httpHeaderResult = httpHeaderResult.append(currentHeaderKey, currentHeaderValue ?? "");
       });
     }
   });
@@ -41,15 +39,13 @@ function mergeHttpParams (...params: HttpParamsOption[]): HttpParams {
   params.forEach((currentParams: HttpParamsOption): void => {
     if (currentParams instanceof HttpParams) {
       currentParams.keys().forEach((currentParamsKey: string): void => {
-        /* eslint-disable-next-line @tseslint/no-non-null-assertion */
-        const currentParamsValue: string = currentParams.get(currentParamsKey)!;
+        const currentParamsValue: string | null = currentParams.get(currentParamsKey);
 
-        httpParamsResult = httpParamsResult.append(currentParamsKey, currentParamsValue);
+        httpParamsResult = httpParamsResult.append(currentParamsKey, currentParamsValue ?? "");
       });
     } else {
       Object.keys(currentParams).forEach((currentParamsKey: string): void => {
-        /* eslint-disable-next-line @tseslint/no-non-null-assertion */
-        const currentParamsValue: string | number | boolean | ReadonlyArray<string | number | boolean> = currentParams[ currentParamsKey ]!;
+        const currentParamsValue: string | number | boolean | ReadonlyArray<string | number | boolean> | undefined = currentParams[ currentParamsKey ];
 
         if (Array.isArray(currentParamsValue)) {
           currentParamsValue.forEach((currentParamsValueItem: string | number | boolean): void => {
@@ -68,7 +64,7 @@ function mergeHttpJsonBody (...body: HttpJsonBodyOption[]): HttpJsonBodyOption {
   let httpBodyResult: HttpJsonBodyOption = {};
 
   body.forEach((currentBody: HttpJsonBodyOption): void => {
-    httpBodyResult = _.merge(httpBodyResult, currentBody);
+    httpBodyResult = merge(httpBodyResult, currentBody);
   });
 
   return httpBodyResult;
