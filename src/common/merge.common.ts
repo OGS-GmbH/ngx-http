@@ -2,6 +2,18 @@ import { HttpHeaders, HttpParams } from "@angular/common/http";
 import { HttpHeadersOption, HttpJsonBodyOption, HttpParamsOption } from "../types/http.type";
 import _ from "lodash";
 
+/**
+ * Merge HTTP headers from different sources
+ *
+ * Given HTTP headers will be merged in sequential order. If you provide HTTP headers A & B, the output would be A' & B.
+ * @remarks This function will take care of the data structure. You can provide either the HTTP header instance or a record. The result will be deterministic.
+ *
+ * @param headers - Different HTTP headers
+ * @returns Merged HTTP headers as instance
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function mergeHttpHeaders (...headers: HttpHeadersOption[]): HttpHeaders {
   let httpHeaderResult: HttpHeaders = new HttpHeaders();
 
@@ -34,7 +46,18 @@ function mergeHttpHeaders (...headers: HttpHeadersOption[]): HttpHeaders {
   return httpHeaderResult;
 }
 
-
+/**
+ * Merge HTTP params from different sources
+ *
+ * Given HTTP params will be merged in sequential order. If you provide HTTP params A & B, the output would be A' & B.
+ * @remarks This function will take care of the data structure. You can provide either the HTTP params instance or a record. The result will be deterministic.
+ *
+ * @param params - Different HTTP params
+ * @returns Merged HTTP params as instance
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function mergeHttpParams (...params: HttpParamsOption[]): HttpParams {
   let httpParamsResult: HttpParams = new HttpParams();
 
@@ -64,6 +87,17 @@ function mergeHttpParams (...params: HttpParamsOption[]): HttpParams {
   return httpParamsResult;
 }
 
+/**
+ * Merge HTTP JSON bodies from different sources
+ *
+ * Given HTTP JSON bodies will be merged in sequential order. If you provide HTTP JSON bodies A & B, the output would be A' & B.
+ *
+ * @param body - Different HTTP JSON bodies
+ * @returns Merged HTTP JSON body
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function mergeHttpJsonBody (...body: HttpJsonBodyOption[]): HttpJsonBodyOption {
   let httpBodyResult: HttpJsonBodyOption = {};
 
@@ -74,6 +108,17 @@ function mergeHttpJsonBody (...body: HttpJsonBodyOption[]): HttpJsonBodyOption {
   return httpBodyResult;
 }
 
+/**
+ * Merge HTTP FormData bodies from different sources
+ *
+ * Given HTTP FormData bodies will be merged in sequential order. If you provide HTTP FormData bodies A & B, the output would be A' & B.
+ *
+ * @param body - Different HTTP FormData bodies
+ * @returns Merged HTTP FormData body
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function mergeHttpFormDataBody (...body: FormData[]): FormData {
   const httpBodyResult: FormData = new FormData();
 
@@ -86,6 +131,17 @@ function mergeHttpFormDataBody (...body: FormData[]): FormData {
   return httpBodyResult;
 }
 
+/**
+ * Merge HTTP URLSearchParam bodies from different sources
+ *
+ * Given HTTP URLSearchParam bodies will be merged in sequential order. If you provide HTTP URLSearchParam bodies A & B, the output would be A' & B.
+ *
+ * @param body - Different HTTP URLSearchParam bodies
+ * @returns Merged HTTP URLSearchParam body
+ *
+ * @since 1.0.0
+ * @author Simon Kovtyk
+ */
 function mergeHttpUrlSearchParamsBody (...body: URLSearchParams[]): URLSearchParams {
   const httpBodyResult: URLSearchParams = new URLSearchParams();
 
