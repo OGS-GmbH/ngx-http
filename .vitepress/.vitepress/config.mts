@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress'
-import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons"
+import { defineConfig } from 'vitepress';
+import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
