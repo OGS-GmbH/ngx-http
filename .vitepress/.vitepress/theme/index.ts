@@ -1,3 +1,4 @@
 import "virtual:group-icons.css";
 
-export * from "vitepress/theme";
+/* eslint-disable-next-line no-restricted-exports */
+export { default } from "vitepress/theme";
