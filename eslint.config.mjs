@@ -48,7 +48,7 @@ export default defineConfig(
     rules: ANGULAR_TEMPLATE_RULES_PRESET,
     languageOptions: {
       globals: { ...globals.browser },
-      parser: angular.templa
+      parser: angular.templateParser
     }
   },
   {
