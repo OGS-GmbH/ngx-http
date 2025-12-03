@@ -4,10 +4,12 @@ on:
     branches:
       - "next"
   workflow_dispatch:
+
 permissions:
   id-token: write
   contents: write
   pull-requests: write
+  pages: write
 
 jobs:
   call-npm-package-deploy:
