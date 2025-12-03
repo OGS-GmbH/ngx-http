@@ -2,7 +2,7 @@
 
 ## 1. Configure
 
-First you need to define your HTTP connection. This is done by using [`HttpConfig`](http://localhost:5173/ngx-http/reference/types/HttpConfig).
+First you need to define your HTTP connection. This is done by using [`HttpConfig`](/reference/types/HttpConfig).
 
 ```typescript [example.ts]
 import { HttpConfig } from "@ogs-gmbh/ngx-http";
@@ -17,7 +17,7 @@ const httpConfig: HttpConfig = {
 
 ## 2. Generating the connection string
 
-After defining your HTTP connection, you can use [`buildHttpConnectionString`](http://localhost:5173/ngx-http/reference/functions/buildHttpConnectionString).
+After defining your HTTP connection, you can use [`buildHttpConnectionString`](/reference/functions/buildHttpConnectionString).
 
 ```typescript [example.ts]
 import { buildHttpConnectionString } from "@ogs-gmbh/ngx-http";

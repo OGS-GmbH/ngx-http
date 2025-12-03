@@ -2,7 +2,7 @@
 
 ## Headers
 
-HTTP headers can be merged by [`mergeHttpHeaders`](http://localhost:5173/ngx-http/reference/functions/mergeHttpHeaders).
+HTTP headers can be merged by [`mergeHttpHeaders`](/reference/functions/mergeHttpHeaders).
 
 Take the following code excerpt as an example:
 
@@ -36,13 +36,13 @@ console.log(mergedHeaders);
 
 Keep in mind, that not only [`HttpHeaders`](https://v18.angular.dev/api/common/http/HttpHeaders) from Angular are supported, but a Record too.
 
-Check the type [`HttpHeadersOption`](http://localhost:5173/ngx-http/reference/types/HttpHeadersOption) for the allowed parameters.
+Check the type [`HttpHeadersOption`](/reference/types/HttpHeadersOption) for the allowed parameters.
 
 :::
 
 ## Params
 
-By using [`mergeHttpParams`](http://localhost:5173/ngx-http/reference/functions/mergeHttpParams), you can merge HTTP params.
+By using [`mergeHttpParams`](/reference/functions/mergeHttpParams), you can merge HTTP params.
 
 Here an example:
 
@@ -76,12 +76,12 @@ console.log(mergedParams);
 
 Keep in mind, that not only [`HttpParams`](https://v18.angular.dev/api/common/http/HttpParams) from Angular are supported, but a Record too.
 
-Check the type [`HttpParamsOption`](http://localhost:5173/ngx-http/reference/types/HttpParamsOption) for the allowed parameters.
+Check the type [`HttpParamsOption`](/reference/types/HttpParamsOption) for the allowed parameters.
 
 :::
 
 ## JSON
-A merge of a JSON body can be achieved by using [`mergeHttpJsonBody`](http://localhost:5173/ngx-http/reference/functions/mergeHttpJsonBody).
+A merge of a JSON body can be achieved by using [`mergeHttpJsonBody`](/reference/functions/mergeHttpJsonBody).
 
 Take this as an example:
 
@@ -114,7 +114,7 @@ console.log(mergedBody);
 
 ## FormData
 
-FormData can also be easily merged by using [`mergeHttpFormDataBody`](http://localhost:5173/ngx-http/reference/functions/mergeHttpFormDataBody).
+FormData can also be easily merged by using [`mergeHttpFormDataBody`](/reference/functions/mergeHttpFormDataBody).
 
 Here an example:
 
@@ -145,7 +145,7 @@ console.log(mergedData);
 
 ## URLSearchParams
 
-Even `URLSearchParams` can be merged trough [`mergeHttpUrlSearchParamsBody`](http://localhost:5173/ngx-http/reference/functions/mergeHttpUrlSearchParamsBody).
+Even `URLSearchParams` can be merged trough [`mergeHttpUrlSearchParamsBody`](/reference/functions/mergeHttpUrlSearchParamsBody).
 
 See here:
 
@@ -178,7 +178,7 @@ console.log(mergedParams);
 
 Sometimes, it is common to use shared properties from HTTP connections like `path` in different HTTP-Environments (e.g. dev vs. prod).
 
-In this case, you can also merge [`HttpConfig`](http://localhost:5173/ngx-http/reference/types/HttpConfig).
+In this case, you can also merge [`HttpConfig`](/reference/types/HttpConfig).
 
 This looks like:
 

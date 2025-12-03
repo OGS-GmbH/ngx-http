@@ -29,6 +29,7 @@
 		},
 		"cache": {
 			"enabled": false
-		}
+    },
+    "analytics": false
 	}
 }
