@@ -59,7 +59,7 @@ export default defineConfig({
   base: "/ngx-http/",
   srcDir: "../dist/typedoc",
   outDir: "../dist/docs",
-  titleTemplate: ":title - OGS Linter",
+  titleTemplate: ":title - OGS ngx-http",
   cleanUrls: true,
   appearance: "dark",
   markdown: {
