@@ -14,8 +14,9 @@ import stylisticTs from "@stylistic/eslint-plugin-ts";
 import tseslint from "typescript-eslint";
 import unicorn from "eslint-plugin-unicorn";
 import angular from "angular-eslint";
+import { defineConfig } from "eslint/config";
 
-export default tseslint.config(
+export default defineConfig(
   {
     plugins: {
       "@tseslint": tseslint.plugin,
@@ -38,7 +39,8 @@ export default tseslint.config(
       "node_modules",
       "dist",
       "CHANGELOG.md",
-      "README.md"
+      "README.md",
+      ".vitepress/.vitepress/cache"
     ]
   },
   {
@@ -55,7 +57,12 @@ export default tseslint.config(
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: [
+            ".vitepress/.vitepress/*",
+            ".vitepress/.vitepress/theme/*"
+          ]
+        },
         tsconfigRootDir: import.meta.dirname
       }
     },
@@ -69,6 +76,10 @@ export default tseslint.config(
   },
   {
     files: [ "**/*.md" ],
+    language: "@markdown/commonmark",
+    languageOptions: {
+      frontmatter: "yaml"
+    },
     rules: ESLINT_MARKDOWN_RULES
   },
   {
