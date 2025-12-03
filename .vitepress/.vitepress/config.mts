@@ -26,6 +26,9 @@ export default defineConfig({
         text: "Guide",
         items: [
           { text: "Getting started", link: "/guide/" },
+          { text: "Define a connection", link: "/guide/define-a-connection/" },
+          { text: "Provide a connection", link: "/guide/provide-a-connection/" },
+          { text: "Merge HTTP options", link: "/guide/merge-http-options/" }
         ]
       },
       {
