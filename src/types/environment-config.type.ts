@@ -1,12 +1,12 @@
 /**
- * Describes a HTTP configuration
+ * Describes an HTTP configuration
  *
  * @since 1.0.0
  * @author Simon Kovtyk
  */
 export type HttpConfig = {
   /**
-   * HTTP protocol, that should be depend on
+   * HTTP protocol, that should be dependent on
    *
    * @example "http"
    * @see https://developer.mozilla.org/en-US/docs/Web/API/URL/protocol
