@@ -4,7 +4,7 @@ import { HttpConfig } from "../types/environment-config.type";
 import { buildHttpConnectionString } from "../public-api";
 
 /**
- * Provide a HTTP configuration by InjectionToken
+ * Provide an HTTP configuration by InjectionToken
  *
  * Internally, it uses the `buildHttpConnectionString` function to build the HTTP connection string based on the provided configuration.
  *
