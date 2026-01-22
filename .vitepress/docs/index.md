@@ -1,8 +1,9 @@
 ---
 layout: home
+isHome: true
 
 hero:
-  text: Improved HTTP handling
+  text: Simplified HTTP Handling
   tagline: A lightweight Angular library that enhances HTTP functionalities by providing types, static values, and utility functions.
   actions:
     - theme: brand
@@ -13,7 +14,7 @@ hero:
       link: /reference
     - theme: alt
       text: GitHub
-      link: https://github.com/OGS-GmbH/linter
+      link: https://github.com/OGS-GmbH/ngx-http
 
 features:
   - icon: <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/></svg>
