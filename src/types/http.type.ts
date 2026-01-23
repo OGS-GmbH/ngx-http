@@ -5,6 +5,7 @@ import { HttpHeaders, HttpParams } from "@angular/common/http";
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Dependency Injection
  */
 export type HttpHeadersOption = HttpHeaders | Record<string, string | string[]>;
 /**
@@ -12,6 +13,7 @@ export type HttpHeadersOption = HttpHeaders | Record<string, string | string[]>;
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Dependency Injection
  */
 export type HttpParamsOption = HttpParams | Record<string, string | number | boolean | ReadonlyArray<string | number | boolean>>;
 /**
@@ -19,6 +21,7 @@ export type HttpParamsOption = HttpParams | Record<string, string | number | boo
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Dependency Injection
  */
 export type HttpJsonBodyOption = {
   [body: string]: string | number | boolean | Array<string | number | boolean> | HttpJsonBodyOption;
@@ -29,6 +32,7 @@ export type HttpJsonBodyOption = {
  * @typeParam HttpBody - The body of the HTTP request
  * @typeParam HttpHeaders - The headers of the HTTP request
  * @typeParam HttpParams - The params of the HTTP request
+ * @category Dependency Injection
  *
  * @since 1.0.0
  * @author Simon Kovtyk

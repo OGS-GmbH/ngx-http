@@ -3,9 +3,7 @@
     "./src/**/*.ts"
   ],
 	"compilerOptions": {
-		"sourceMap": true,
-    "declarationMap": true,
-		"inlineSources": true,
+		"inlineSources": false,
 		"alwaysStrict": true,
 		"strict": true,
 		"strictNullChecks": true,

@@ -10,6 +10,7 @@ import { merge } from "es-toolkit";
  *
  * @param headers - Different HTTP headers
  * @returns Merged HTTP headers as instance
+ * @category Commons
  *
  * @since 1.0.0
  * @author Simon Kovtyk

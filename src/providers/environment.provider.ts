@@ -10,6 +10,7 @@ import { buildHttpConnectionString } from "../public-api";
  *
  * @param httpConfig - The HTTP configuration
  * @returns A FactoryProvider that simply builds the HTTP configurtion
+ * @category Dependency Injection
  *
  * @since 1.0.0
  * @author Simon Kovtyk

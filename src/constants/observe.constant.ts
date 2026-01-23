@@ -4,6 +4,7 @@
  * @see https://v18.angular.dev/api/common/http/HttpClient
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HttpObserve {
   /**
@@ -11,6 +12,7 @@ export namespace HttpObserve {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const BODY: string = "body";
   /**
@@ -18,6 +20,7 @@ export namespace HttpObserve {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const EVENTS: string = "events";
   /**
@@ -25,6 +28,7 @@ export namespace HttpObserve {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const RESPONSE: string = "response";
 }

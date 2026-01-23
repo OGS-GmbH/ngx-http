@@ -3,10 +3,12 @@
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HttpContentTypes {
   /**
    * A collection of application/* content-types
+   * @category Constants
    *
    * @since 1.0.0
    * @author Simon Kovtyk

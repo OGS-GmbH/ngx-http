@@ -3,6 +3,7 @@
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HttpPorts {
   /**
@@ -10,6 +11,7 @@ export namespace HttpPorts {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTP_PORT: number = 80;
   /**
@@ -17,6 +19,7 @@ export namespace HttpPorts {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTPS_PORT: number = 443;
   /**
@@ -25,6 +28,7 @@ export namespace HttpPorts {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTP_PORT_ALTERNATE: number = 7104;
   /**
@@ -33,6 +37,7 @@ export namespace HttpPorts {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTPS_PORT_ALTERNATE: number = 7102;
 }

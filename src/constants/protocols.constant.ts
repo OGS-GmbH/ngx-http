@@ -3,6 +3,7 @@
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HTTP_PROTOCOLS {
   /**
@@ -10,6 +11,7 @@ export namespace HTTP_PROTOCOLS {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTPS: string = "https";
   /**
@@ -17,6 +19,7 @@ export namespace HTTP_PROTOCOLS {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const HTTP: string = "http";
 }

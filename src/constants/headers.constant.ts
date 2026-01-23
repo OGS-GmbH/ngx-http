@@ -3,6 +3,7 @@
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HttpHeaders {
   /**
@@ -10,6 +11,7 @@ export namespace HttpHeaders {
    *
    * @since 1.0.0
    * @author Simon Kovtyk
+   * @category Constants
    */
   export const CONTENT_TYPE: string = "Content-Type";
 }

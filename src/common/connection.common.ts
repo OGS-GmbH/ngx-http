@@ -5,6 +5,7 @@ import { HttpConfig } from "../types/environment-config.type";
  *
  * @param httpConfig - The configuration for the HTTP connection
  * @returns HTTP connection string
+ * @category Commons
  *
  * @since 1.0.0
  * @author Simon Kovtyk

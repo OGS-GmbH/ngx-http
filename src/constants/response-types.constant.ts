@@ -4,6 +4,7 @@
  * @see https://v18.angular.dev/api/common/http/HttpRequest#responseType
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Constants
  */
 export namespace HttpResponseTypes {
   /**

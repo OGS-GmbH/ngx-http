@@ -10,6 +10,18 @@
 <a href="https://github.com/OGS-GmbH/ngx-http/actions/workflows/main-deploy.yml" target="_blank"><img alt="ci badge"  src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/ngx-http/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
 <a href="https://www.npmjs.com/package/@ogs-gmbh/ngx-http" target="_blank"><img alt="npm badge" src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fngx-http?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
 
+- **Consistent HTTP Abstractions**\
+  Provides a unified and predictable API over Angular’s HTTP layer to reduce ad-hoc request logic.
+
+- **Type Safety by Design**\
+  Enforces strict typing for request payloads, responses, and errors to improve correctness and refactorability.
+
+- **Centralized Cross-Cutting Concerns**\
+  Consolidates error handling & and request configuration in a single, reusable layer.
+
+- **Framework-Conform Integration**\
+  Aligns with Angular’s dependency injection and lifecycle model to ensure seamless and idiomatic usage.
+
 ## Getting Started
 
 > [!IMPORTANT]

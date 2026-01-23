@@ -3,6 +3,7 @@
  *
  * @since 1.0.0
  * @author Simon Kovtyk
+ * @category Dependency Injection
  */
 export type HttpConfig = {
   /**
