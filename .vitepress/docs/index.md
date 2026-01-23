@@ -1,5 +1,7 @@
 ---
 layout: home
+isHome: true
+
 
 hero:
   text: Improved HTTP handling

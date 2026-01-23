@@ -8,6 +8,16 @@ A lightweight and modular Angular library that enhances HTTP functionalities by 
 
 It is designed to streamline HTTP communication within Angular applications by reducing boilerplate code, improving type safety, and enforcing consistent patterns. The library is framework-aligned, fully tree-shakable, and integrates seamlessly with Angular's HttpClient. Whether you're building RESTful APIs, handling error responses, or managing headers and query parameters, this library helps you write cleaner, more maintainable, and testable code.
 
+
+## Getting Started
+
+> [!IMPORTANT]
+> We're offering an extensive API-Reference covered with in-depth usage examples of this project.
+
+To get a starting point, simply refer to our documentation at [ogs-gmbh.github.io/vitepress-plugin-sidebar](https://ogs-gmbh.github.io/vitepress-plugin-sidebar).
+
+
+
 ## Installation
 To get started, you can install this package using your preferred package manager.
 ````shell
