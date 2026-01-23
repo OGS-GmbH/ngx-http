@@ -1,32 +1,31 @@
 import {
+  ANGULAR_TEMPLATE_RULES_PRESET,
   ESLINT_JSON_RULES,
   ESLINT_MARKDOWN_RULES,
   JS_RULES_PRESET,
-  ANGULAR_TEMPLATE_RULES_PRESET,
   getAngularTsPreset
 } from "@ogs-gmbh/linter";
-import eslintJson from "@eslint/json";
-import eslintMarkdown from "@eslint/markdown";
 import globals from "globals";
-import stylisticJs from "@stylistic/eslint-plugin-js";
-import stylisticPlus from "@stylistic/eslint-plugin-plus";
-import stylisticTs from "@stylistic/eslint-plugin-ts";
-import tseslint from "typescript-eslint";
-import unicorn from "eslint-plugin-unicorn";
-import angular from "angular-eslint";
+import stylisticPlugin from "@stylistic/eslint-plugin";
+import unicornPlugin from "eslint-plugin-unicorn";
+import jsdocPlugin from "eslint-plugin-jsdoc";
+import eslintMarkdown from "@eslint/markdown";
+import tseslintPlugin from "typescript-eslint";
+import angularPlugin from "angular-eslint";
+import eslintJsonPlugin from "@eslint/json";
+import { defineConfig } from "eslint/config";
 
-export default tseslint.config(
+export default defineConfig(
   {
     plugins: {
-      "@tseslint": tseslint.plugin,
-      "@unicorn": unicorn,
-      "@stylistic/js": stylisticJs,
-      "@stylistic/ts": stylisticTs,
-      "@stylistic/plus": stylisticPlus,
       "@markdown": eslintMarkdown,
-      "@json": eslintJson,
-      "@angular-template": angular.templatePlugin,
-      "@angular": angular.tsPlugin
+      "@tseslint": tseslintPlugin.plugin,
+      "@stylistic": stylisticPlugin,
+      "@unicorn": unicornPlugin,
+      "@jsdoc": jsdocPlugin,
+      "@json": eslintJsonPlugin,
+      "@angular": angularPlugin.tsPlugin,
+      "@angular-template": angularPlugin.templatePlugin
     }
   },
   {
@@ -34,26 +33,22 @@ export default tseslint.config(
       ".angular",
       ".git",
       ".husky",
-      ".idea",
       "node_modules",
       "dist",
-      "CHANGELOG.md",
-      "README.md"
+      ".vitepress/.vitepress/cache",
+      "CODE_OF_CONDUCT.md"
     ]
   },
   {
-    files: [ "**/*.html" ],
-    rules: ANGULAR_TEMPLATE_RULES_PRESET,
+    files: [
+      "**/*.ts",
+      "**/*.cts",
+      "**/*.mts"
+    ],
+    processor: angularPlugin.processInlineTemplates,
     languageOptions: {
-      globals: { ...globals.browser },
-      parser: angular.templa
-    }
-  },
-  {
-    files: [ "**/*.ts" ],
-    processor: angular.processInlineTemplates,
-    languageOptions: {
-      parser: tseslint.parser,
+      parser: tseslintPlugin.parser,
+      globals: globals.browser,
       parserOptions: {
         projectService: {
           allowDefaultProject: [
@@ -65,16 +60,19 @@ export default tseslint.config(
       }
     },
     rules: getAngularTsPreset({
-      selectorPrefix: "ogs-http"
+      selectorPrefix: "ogs"
     })
   },
   {
-    files: [ "**/*.js", "**/*.mjs", "**/*.cjs" ],
+    files: [
+      "**/*.js",
+      "**/*.cjs",
+      "**/*.mjs"
+    ],
+    languageOptions: {
+      globals: globals.browser
+    },
     rules: JS_RULES_PRESET
-  },
-  {
-    files: [ "**/*.md" ],
-    rules: ESLINT_MARKDOWN_RULES
   },
   {
     files: [ "**/*.json" ],
@@ -90,5 +88,20 @@ export default tseslint.config(
     files: [ "**/*.jsonc" ],
     language: "@json/jsonc",
     rules: ESLINT_JSON_RULES
+  },
+  {
+    files: [ "**/*.html" ],
+    languageOptions: {
+      parser: angularPlugin.templateParser
+    },
+    rules: ANGULAR_TEMPLATE_RULES_PRESET
+  },
+  {
+    files: [ "**/*.md" ],
+    rules: ESLINT_MARKDOWN_RULES,
+    language: "@markdown/gfm",
+    languageOptions: {
+      frontmatter: "yaml"
+    }
   }
 );

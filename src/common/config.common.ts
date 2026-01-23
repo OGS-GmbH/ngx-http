@@ -5,7 +5,7 @@ import { HttpConfig } from "../types/environment-config.type";
  *
  * @param baseHttpConfig - Base HTTP configuration
  * @param httpConfig - HTTP configuration, that will overrride the base configuration
- * @return Merged HTTP configuration
+ * @returns Merged HTTP configuration
  *
  * @since 1.0.0
  * @author Simon Kovtyk

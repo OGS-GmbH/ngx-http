@@ -6,9 +6,9 @@
 
 ![Preview](./docs/preview.avif)
 
-<a href="./LICENSE" target="_blank"><img src="https://img.shields.io/github/license/OGS-GmbH/ngx-http?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://github.com/OGS-GmbH/ngx-http/actions/workflows/main-deploy.yml" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/ngx-http/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://www.npmjs.com/package/@ogs-gmbh/ngx-http" target="_blank"><img src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fngx-http?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
+<a href="./LICENSE" target="_blank"><img alt="license badge" src="https://img.shields.io/github/license/OGS-GmbH/ngx-http?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://github.com/OGS-GmbH/ngx-http/actions/workflows/main-deploy.yml" target="_blank"><img alt="ci badge"  src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/ngx-http/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://www.npmjs.com/package/@ogs-gmbh/ngx-http" target="_blank"><img alt="npm badge" src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fngx-http?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
 
 ## Getting Started
 

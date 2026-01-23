@@ -5,7 +5,7 @@ next: false
 
 # Getting started
 
-### Installation
+## Installation
 
 - Node.js version 18 or higher
 - An Angular project
@@ -31,6 +31,6 @@ $ bun add @ogs-gmbh/ngx-http
 
 :::
 
-### Usage
+## Usage
 
 Since the usage may vary, it is recommended to consult the [reference](/reference).

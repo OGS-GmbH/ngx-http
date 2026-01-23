@@ -81,12 +81,14 @@ export default defineConfig({
   cleanUrls: true,
   appearance: true,
   markdown: {
+    /* eslint-disable-next-line @tseslint/typedef */
     config(md) {
       md.use(groupIconMdPlugin)
     }
   },
   vite: {
     plugins: [
+      /* @ts-expect-error Type mismatch */
       groupIconVitePlugin()
     ]
   }
