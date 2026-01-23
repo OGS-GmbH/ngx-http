@@ -1,7 +1,7 @@
 import { HttpConfig } from "../types/environment-config.type";
 
 /**
- * Build a HTTP connection string from the given configuration
+ * Build an HTTP connection string from the given configuration
  *
  * @param httpConfig - The configuration for the HTTP connection
  * @returns HTTP connection string
