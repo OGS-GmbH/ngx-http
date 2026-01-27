@@ -1,6 +1,6 @@
 import { HttpHeaders, HttpParams } from "@angular/common/http";
 import { HttpHeadersOption, HttpJsonBodyOption, HttpParamsOption } from "../types/http.type";
-import _ from "lodash";
+import { merge } from "es-toolkit";
 
 /**
  * Merge HTTP headers from different sources
@@ -102,7 +102,7 @@ function mergeHttpJsonBody (...body: HttpJsonBodyOption[]): HttpJsonBodyOption {
   let httpBodyResult: HttpJsonBodyOption = {};
 
   body.forEach((currentBody: HttpJsonBodyOption): void => {
-    httpBodyResult = _.merge(httpBodyResult, currentBody);
+    httpBodyResult = merge(httpBodyResult, currentBody);
   });
 
   return httpBodyResult;

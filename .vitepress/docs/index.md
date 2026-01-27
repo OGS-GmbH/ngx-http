@@ -2,9 +2,8 @@
 layout: home
 isHome: true
 
-
 hero:
-  text: Improved HTTP handling
+  text: Simplified HTTP Handling
   tagline: A lightweight Angular library that enhances HTTP functionalities by providing types, static values, and utility functions.
   actions:
     - theme: brand

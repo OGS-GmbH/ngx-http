@@ -8,7 +8,7 @@ next: false
 
 ## 1. Configure
 
-To configure a HTTP connection, simply follow the [define a connection guide](/guide/define-a-connection).
+To configure an HTTP connection, simply follow the [define a connection guide](/guide/define-a-connection).
 
 ## 2. Provide
 
