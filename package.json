@@ -1,6 +1,6 @@
 {
 	"name": "@ogs-gmbh/ngx-http",
-	"version": "1.0.3",
+	"version": "2.0.0",
 	"description": "A lightweight Angular library that enhances HTTP functionalities by providing types, static values, and utility functions.",
 	"keywords": [
 		"http",

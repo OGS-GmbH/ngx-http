@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.0](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.3...v2.0.0) (2026-01-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to angular 21
+
+### Bug Fixes
+
+* add tsdoc & vitepress ([ff3b343](https://github.com/OGS-GmbH/ngx-http/commit/ff3b3433ec86b1a56b5c363fbe2f8829fe74db0f))
+* typos ([#13](https://github.com/OGS-GmbH/ngx-http/issues/13)) ([f793121](https://github.com/OGS-GmbH/ngx-http/commit/f79312120985058f7ce821d54f37b758ef2c756e))
+
+
+### Miscellaneous Chores
+
+* upgrade to angular 21 ([1ec5963](https://github.com/OGS-GmbH/ngx-http/commit/1ec596375ea069122a93d3170cc955c5961d4047))
+
 ## [1.0.3](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.2...v1.0.3) (2025-06-13)
 
 
