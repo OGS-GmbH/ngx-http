@@ -33,10 +33,11 @@ export default defineConfig(
       ".angular",
       ".git",
       ".husky",
+      ".idea",
+      ".vscode",
       "node_modules",
       "dist",
-      ".vitepress/.vitepress/cache",
-      "CODE_OF_CONDUCT.md"
+      ".vitepress/.vitepress/cache"
     ]
   },
   {
