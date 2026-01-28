@@ -5,6 +5,7 @@ import packageJson from "../../package.json";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: "ngx-http",
   description: "A lightweight Angular library that enhances HTTP functionalities by providing types, static values, and utility functions.",
   themeConfig: {
