@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/OGS-GmbH/ngx-http/compare/v2.0.0...v2.1.0) (2026-02-17)
+
+
+### Features
+
+* add http-status fn and constants ([29a66a5](https://github.com/OGS-GmbH/ngx-http/commit/29a66a5707f9b20ea414c7bc673bba545397d37f))
+
 ## [2.0.0](https://github.com/OGS-GmbH/ngx-http/compare/v1.0.3...v2.0.0) (2026-01-28)
 
 
