@@ -1,7 +1,7 @@
 /**
  * A collection of possible HTTP observe options for Angular HttpClient
  *
- * @see https://v18.angular.dev/api/common/http/HttpClient
+ * @see https://v21.angular.dev/api/common/http/HttpClient
  * @since 1.0.0
  * @author Simon Kovtyk
  * @category Constants
